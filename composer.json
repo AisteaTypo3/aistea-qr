@@ -1,0 +1,26 @@
+{
+  "name": "aistea/aistea-qr",
+  "type": "typo3-cms-extension",
+  "description": "TYPO3 extension to create, manage and render dynamic QR codes (SVG), with backend preview and downloadable SVG.",
+  "license": "MIT",
+  "require": {
+    "php": "^8.2",
+    "typo3/cms-backend": "^14.0",
+    "typo3/cms-core": "^14.0",
+    "typo3/cms-extbase": "^14.0",
+    "typo3/cms-fluid": "^14.0",
+    "typo3/cms-frontend": "^14.0",
+    "typo3/cms-redirects": "^14.0",
+    "endroid/qr-code": "^5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Aistea\\AisteaQr\\": "Classes/"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "aistea_qr"
+    }
+  }
+}

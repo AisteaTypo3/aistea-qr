@@ -1,0 +1,30 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Aistea\AisteaQr\:
+    resource: '../Classes/*'
+
+  Aistea\AisteaQr\Form\Element\QrPreviewElement:
+    tags:
+      - name: formEngine.node
+        identifier: dynamicQrcodePreview
+        priority: 60
+
+  Aistea\AisteaQr\Form\Element\QrAnalyticsElement:
+    tags:
+      - name: formEngine.node
+        identifier: dynamicQrcodeAnalytics
+        priority: 60
+
+  Aistea\AisteaQr\Controller\ScanExportController:
+    public: true
+    tags:
+      - name: controller.service_arguments
+
+  Aistea\AisteaQr\Controller\LivePreviewController:
+    public: true
+    tags:
+      - name: controller.service_arguments

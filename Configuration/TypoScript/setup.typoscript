@@ -1,0 +1,7 @@
+plugin.tx_aisteaqr_qrcode {
+  view {
+    templateRootPaths.10 = EXT:aistea_qr/Resources/Private/Templates/
+    layoutRootPaths.10 = EXT:aistea_qr/Resources/Private/Layouts/
+    partialRootPaths.10 = EXT:aistea_qr/Resources/Private/Partials/
+  }
+}
